@@ -1,0 +1,17 @@
+
+import Counter from "@/components/Counter";
+import InnerMarkdown from "@/fragments/inner-markdown.mdx";
+import Code from "@/components/Code.astro";
+
+This MDX file is being imported directly by an Astro component.
+
+```python
+def test():
+    return "Hello, world!"
+```
+
+<InnerMarkdown components={{pre: Code}}/>
+
+This is the same thing, but without explicit component substitution:
+
+<InnerMarkdown />
